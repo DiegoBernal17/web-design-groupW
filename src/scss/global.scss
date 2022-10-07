@@ -1,5 +1,5 @@
 $primary: #fe0000;
-$input-border-color: #ff3534;
+$input-border-color: #ff3534; // f96f6a
 $input-border-radius: 0;
 $input-border-radius-sm: 0;
 $input-border-radius-lg: 0;
@@ -7,16 +7,14 @@ $input-placeholder-color: #000;
 $form-label-color: #707070;
 $form-check-input-width: 1.4em;
 $form-check-margin-bottom: 1rem;
+$navbar-light-color: #000;
 
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/variables";
-$active-color: white;
 
 $bg-color-1: #4957d0;
-$bg-color-2: #fe0000;
-$input-border-color: #f96f6a;
-$section-title-color: #fc0101;
-$text-label-color: #707070;
+$bg-color-2: #fe0000; 
+$section-title-color: #fc0101; 
 
 body {
   min-height: 100vh;
@@ -56,7 +54,7 @@ body {
 .form {
   background-color: #ffffff;
   padding: 20px;
-  max-width: 994px;
+  max-width: 750px;
   margin: 0 auto;
   margin-bottom: 80px;
 
