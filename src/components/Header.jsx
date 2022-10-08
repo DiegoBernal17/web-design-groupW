@@ -19,8 +19,11 @@ const Header = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav mt-md-0 mt-4 nav-links">
             <li className="nav-item">
               <a className="nav-link" href="#">
                 MODELOS

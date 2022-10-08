@@ -89,7 +89,7 @@ const PersonalData = ({
             className="btn btn-outline-primary btn-lg mt-0"
             htmlFor="contactMethod-phone"
           >
-            TELÉFONO
+            <i className="fas fa-phone-alt mr-2" /> TELÉFONO
           </label>
         </div>
         <div className="col d-grid">
@@ -105,7 +105,7 @@ const PersonalData = ({
             className="btn btn-outline-primary btn-lg mt-0"
             htmlFor="contactMethod-email"
           >
-            EMAIL
+            <i className="fas fa-envelope mr-2" /> EMAIL
           </label>
         </div>
         <div className="col d-grid">
@@ -118,7 +118,7 @@ const PersonalData = ({
             value="both"
           />
           <label
-            className="btn btn-outline-primary btn-lg mt-0"
+            className="btn btn-outline-primary btn-lg mt-0 d-flex align-items-center"
             htmlFor="contactMethod-both"
           >
             AMBOS

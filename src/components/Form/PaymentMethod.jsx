@@ -28,7 +28,7 @@ const PaymentMethod = ({
             //defaultChecked
           />
           <label className="btn btn-outline-primary btn-lg mt-0" htmlFor="cash">
-            Contado
+            <i className="fas fa-money-bill-alt mr-2" /> Contado
           </label>
         </div>
         <div className="col d-grid">
@@ -44,7 +44,7 @@ const PaymentMethod = ({
             className="btn btn-outline-primary btn-lg mt-0"
             htmlFor="credit"
           >
-            Crédito
+            <i className="fas fa-credit-card mr-2" /> Crédito
           </label>
         </div>
       </div>

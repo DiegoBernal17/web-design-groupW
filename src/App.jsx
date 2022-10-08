@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
-import Comments from "./components/Form/Comments";
-import PaymentMethod from "./components/Form/PaymentMethid";
+import CarInformation from "./components/Form/CarInformation";
 import PersonalData from "./components/Form/PersonalData";
-import FirstPart from "./components/Form/FirstPart";
+import PaymentMethod from "./components/Form/PaymentMethod";
+import Comments from "./components/Form/Comments";
 import Checks from "./components/Form/Checks";
 
 const App = () => {
@@ -34,11 +34,13 @@ const App = () => {
     }));
   };
 
+  const handleSubmit = (ev) => ev.preventDefault();
+
   return (
     <div>
       <Header />
-      <Form>
-        <FirstPart
+      <Form onSubmit={handleSubmit}>
+        <CarInformation
           model={formData.model}
           version={formData.version}
           state={formData.state}
@@ -66,11 +68,6 @@ const App = () => {
           promotions={formData.promotions}
           handleInput={handleInput}
         />
-        <div className="d-flex justify-content-center">
-          <button type="submit" className="btn btn-outline-primary btn-lg">
-            Enviar
-          </button>
-        </div>
       </Form>
     </div>
   );

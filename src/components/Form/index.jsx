@@ -1,11 +1,13 @@
 import React from "react";
-import FormHeader from "../FormHeader";
+import FormHeader from "./FormHeader";
 
-const Form = ({ children }) => {
+const Form = ({ children, onSubmit }) => {
   return (
     <>
       <FormHeader />
-      <form className="form">{children}</form>
+      <form className="form" onSubmit={onSubmit}>
+        {children}
+      </form>
     </>
   );
 };

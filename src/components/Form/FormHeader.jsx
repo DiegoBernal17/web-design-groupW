@@ -6,6 +6,9 @@ const FormHeader = () => {
       <p className="first-text">COTIZADOR</p>
       <p className="second-text">CITADINO, AVENTURERO, DEPORTIVO</p>
       <h1 className="third-text">Elige el tuyo</h1>
+      <div className="car-container">
+        <div className="car" />
+      </div>
     </div>
   );
 };
